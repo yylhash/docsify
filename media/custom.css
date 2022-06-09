@@ -1,0 +1,555 @@
+/* 全局 */
+:root {
+    letter-spacing: 0.8px; /* 字间距 */
+    --hassan-theme-color: #81d8cf;
+    --hassan-theme-color-light: #b3e7e2;
+    --hassan-theme-color-dark: #5ccdc1;
+    --hassan-theme-color-bright: #59ffee;
+    --wendyzhang: #7f4985;
+    --wendyzhang-bright: #8600ce;
+    --wendyzhang-light: #ded5fb;
+    --hassan-purple-dark: #2f2448;
+    --hassan-purple-darker: #544181;
+    --hassan-blue: #5078ef;
+    --hassan-blue-dark: #30343f;
+    --hassan-blue-darker: #535a6c;
+    --hassan-blue-light: #f0f3fa;
+    --hassan-blue-lighter: #dbe2f2;
+    --hassan-blue-transparent: rgba(80, 136, 239, 0.3);
+    --hassan-white: #ffffffe6;
+    --hassan-black: #232425;
+    --hassan-black-light: #444;
+    --hassan-black-lighter: #222;
+    --hassan-oringe: #f18865;
+    --hassan-gold-light: #f6d6af;
+    --hassan-gray-light: #f5f5f5;
+    --hassan-gray-lighter: #ddd;
+    --hassan-gray: #aaa;
+    --hassan-gray-darker: #888;
+    --hassan-gray-dark: #666;
+    --hassan-gray-blue: #a1a2b8;
+    --hassan-transparent-white: rgba(255, 255, 255, 0.66);
+    --hassan-transparent-white-shallow: rgba(255, 255, 255, 0.8);
+    --hassan-transparent-white-deep: rgba(255, 255, 255, 0.46);
+    --hassan-transparent-black: rgba(17, 17, 17, 0.8);
+    --hassan-transparent-gray: rgba(128, 128, 128, 0.66);
+  }
+  
+  /* 滚动条 -------------------------------------------开始 */
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--hassan-gray);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hassan-theme-color);
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  ::-moz-selection {
+    color: var(--hassan-white);
+    background-color: var(--hassan-theme-color);
+  }
+  ::-webkit-scrollbar-track {
+    border-color: transparent;
+  }
+  /* 滚动条 ------------------------------------------ 结束 */
+  
+  @font-face {
+    font-family: "PingFang-SC"; /* 字体名自定义即可 */
+    src: url("https://npm.elemecdn.com/hassan-assets/fonts/PingFang-SC.otf"); /* 字体文件路径 */
+    font-display: swap;
+  }
+  
+  /* 全局 */
+  * {
+    font-family: "PingFang-SC" !important;
+    letter-spacing: 0.8px !important;
+    color: var(--hassan-black);
+  }
+  body {
+    background-color: #f8fefb;
+  }
+  
+  /* 封面标题 */
+  .cover-main h1,
+  .cover-main h2 {
+    border-bottom: none;
+    margin: 20px auto !important;
+  }
+  .cover-main h1 a,
+  .cover-main h2 a {
+    font-weight: bold;
+  }
+  
+  .markdown-section {
+    max-width: 1000px;
+  }
+  
+  /* 文档标题 */
+  h1 span {
+    font-size: 34px;
+  }
+  h2 span {
+    font-size: 30px;
+  }
+  h3 span {
+    font-size: 26px;
+  }
+  h4 span {
+    font-size: 22px;
+  }
+  h5 span {
+    font-size: 20px;
+  }
+  h6 span {
+    font-size: 20px;
+    color: #57728c;
+  }
+  h1 {
+    margin: 0 0 1rem !important;
+  }
+  h2 {
+    margin: 2rem 0 1rem !important;
+  }
+  h3 {
+    margin: 1.9rem 0 1rem !important;
+  }
+  h4 {
+    margin: 1.8rem 0 1rem !important;
+  }
+  h5 {
+    margin: 1.7rem 0 1rem !important;
+  }
+  h6 {
+    margin: 1.6rem 0 1rem !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    transition: 0.3s;
+    transform: translate(0);
+  }
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover,
+  h5:hover,
+  h6:hover {
+    transform: translate(0.6rem);
+  }
+  h1.app-name:hover,
+  h1#诗-颂-的-文-档:hover,
+  h2#docsify-4121:hover {
+    transform: translate(0);
+  }
+  h1:before {
+    content: "H1";
+    margin: 0 1rem 0 0;
+    font-size: 30px;
+    color: #bfe4fb;
+  }
+  h2:before {
+    content: "H2";
+    margin: 0 0.9rem 0 0;
+    font-size: 26px;
+    color: #bfe4fb;
+  }
+  h3:before {
+    content: "H3";
+    margin: 0 0.8rem 0 0;
+    font-size: 22px;
+    color: #bfe4fb;
+  }
+  h4:before {
+    content: "H4";
+    margin: 0 0.7rem 0 0;
+    font-size: 20px;
+    color: #bfe4fb;
+  }
+  h5:before {
+    content: "H5";
+    margin: 0 0.6rem 0 0;
+    font-size: 18px;
+    color: #bfe4fb;
+  }
+  h6:before {
+    content: "H6";
+    margin: 0 0.6rem 0 0;
+    font-size: 18px;
+    color: #bfe4fb;
+  }
+  h1.app-name::before,
+  h1#诗-颂-的-文-档::before,
+  h2#docsify-4121:before {
+    content: "";
+    margin: 0;
+  }
+  
+  /* 文章 */
+  .markdown-section p,
+  .markdown-section ol li,
+  .markdown-section ul li,
+  table {
+    font-size: 18px !important;
+  }
+  .markdown-section figure,
+  .markdown-section p {
+    margin: 0.7em 0;
+  }
+  blockquote p {
+    margin: 0;
+    padding: 12px 0;
+  }
+  blockquote ol {
+    margin: 0;
+  }
+  .markdown-section ol,
+  .markdown-section p,
+  .markdown-section ul {
+    line-height: 2rem;
+  }
+  
+  /* 图片 */
+  img.medium-zoom-image {
+    border-radius: 10px;
+  }
+  
+  /* 引用块 */
+  .markdown-section blockquote {
+    background-color: #ddf4f2;
+    margin: 20px 0 !important;
+    padding: 0 10px;
+    border-radius: 0 10px 10px 0;
+  }
+  .markdown-section blockquote p {
+    font-weight: normal;
+  }
+  
+  /* 加粗字体 */
+  .markdown-section b,
+  .markdown-section strong {
+    color: var(--hassan-blue);
+  }
+  
+  /* 下划线 */
+  u {
+    font-weight: normal;
+    background-color: var(--hassan-blue-transparent);
+    color: var(--hassan-black);
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 0 2px;
+    margin: 0 1px;
+  }
+  
+  /* 左侧栏 */
+  .sidebar ul li a {
+    font-size: 16px;
+    line-height: 38px;
+    transition: 0.3s;
+    border-radius: 12px;
+    padding: 0 6px;
+    margin-right: 6px;
+  }
+  .sidebar ul li a:hover {
+    color: #505d6b;
+    background-color: var(--hassan-theme-color-light);
+    text-decoration: none;
+  }
+  .sidebar-nav ul li {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+  .sidebar-nav > ul > li {
+    margin: 10px 0 0 0;
+  }
+  .sidebar ul li.active > a {
+    border: none;
+  }
+  aside.sidebar {
+    background-color: #f8f8f8 !important;
+  }
+  .sidebar ul li.active > a {
+    font-weight: normal;
+  }
+  .app-sub-sidebar li:before {
+    content: none;
+  }
+  /* 左侧栏切换 */
+  .sidebar-toggle {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  /* 链接 */
+  .markdown-section a:not(.anchor) {
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid var(--hassan-theme-color);
+    color: var(--hassan-black);
+    padding: 0 4px;
+    transition: 0.3s;
+  }
+  .markdown-section a:not(.anchor):hover {
+    border-radius: 6px;
+    border-bottom: 2px solid transparent;
+    background-color: var(--hassan-black);
+    color: var(--hassan-theme-color);
+  }
+  .app-nav a.active {
+    border: none;
+  }
+  .markdown-section a:hover {
+    text-decoration: none;
+  }
+  
+  /* 表格 --------------------------------------------------开始 */
+  .markdown-section tr {
+    border: none;
+  }
+  .markdown-section table th,
+  .markdown-section table td {
+    border-right: 2px solid #a7bced;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  .markdown-section table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 12px;
+  }
+  .markdown-section table tbody tr:last-child td:last-child {
+    border-radius: 0 0 12px 0;
+  }
+  .markdown-section tr,
+  .markdown-section table th:last-child,
+  .markdown-section table td:last-child {
+    border-right: none !important;
+  }
+  /* 表格标题居左显示 */
+  .markdown-section table th {
+    text-align: left;
+    background-color: var(--hassan-theme-color-light);
+  }
+  .markdown-section table th:first-child {
+    border-radius: 12px 0 0 0;
+  }
+  .markdown-section table th:last-child {
+    border-radius: 0 12px 0 0;
+  }
+  .markdown-section table tr:nth-child(even) {
+    background-color: var(--hassan-blue-lighter);
+  }
+  .markdown-section table tr:nth-child(odd) {
+    background-color: var(--hassan-blue-light);
+  }
+  .markdown-section table {
+    display: inline-table;
+    border-radius: 12px;
+  }
+  .markdown-section td,
+  .markdown-section th {
+    padding: 13px;
+  }
+  /* 表格 --------------------------------------------------结束 */
+  
+  /* 搜索 */
+  .search {
+    margin: 48px auto 9px !important;
+  }
+  
+  /* Logo */
+  h1.app-name {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* 右上角导航栏 */
+  .app-nav.no-badge {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    backdrop-filter: saturate(160%) blur(10px);
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--hassan-blue-lighter);
+  }
+  .app-nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .app-nav ul li {
+    height: 40px;
+    margin: 8px;
+    padding: 7px 8px;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  .app-nav ul li:hover {
+    background-color: var(--hassan-theme-color-dark);
+  }
+  .app-nav ul li:hover a {
+    color: var(--hassan-white);
+  }
+  .app-nav ul {
+    padding-left: 0;
+  }
+  
+  /* 代码块 */
+  .markdown-section pre {
+    padding: 0 !important;
+    border-radius: 12px;
+  }
+  .markdown-section pre > code {
+    color: #525252;
+    padding: 12px 15px;
+    line-height: inherit;
+    margin: 0;
+    max-width: inherit;
+    overflow: inherit;
+    white-space: inherit;
+  }
+  .markdown-section > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
+    font-size: 17px;
+  }
+  /* 复制按钮 */
+  .docsify-copy-code-button {
+    border-radius: 0 0 0 10px !important;
+  }
+  /* 代码语言 */
+  .markdown-section output:after,
+  .markdown-section pre:after {
+    color: #aaa;
+    font-size: 16px;
+  }
+  /* 代码框 */
+  .markdown-section code {
+    border-radius: 6px;
+    background-color: #eee;
+    padding: 0 2px;
+    margin: auto 3px;
+    box-shadow: 0 1px 3px 0px rgba(10, 10, 10, 0.3);
+  }
+  
+  /* 哔哩哔哩视频框架 */
+  div iframe {
+    border-radius: 16px;
+  }
+  
+  /* 引用块 */
+  .markdown-section blockquote {
+    margin: 1rem 0;
+    border-radius: 5px 12px 12px 5px;
+    border-left: 5px solid var(--hassan-theme-color-dark);
+  }
+  .markdown-section blockquote p:nth-child(n + 2) {
+    margin: 0;
+    padding-top: 0;
+  }
+  .markdown-section blockquote p:first-child {
+    margin: 0;
+  }
+  
+  /* 注意引用块 */
+  .markdown-section p.tip,
+  .markdown-section tr:nth-child(2n) {
+    background-color: #f0f0f0;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  /* 页脚上方分割线 */
+  .markdown-section hr {
+    border-bottom: none;
+    padding: 6% 0;
+    margin: 3em 0 1em;
+    background: url(https://npm.elemecdn.com/hassan-assets/img/Bilibili_Dividing_Line.png)
+      no-repeat;
+    background-size: 80%;
+  }
+  
+  /* 鼠标图标 -----------------------------------------------------------------------开始 */
+  body {
+    cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor.png), default !important;
+  }
+  
+  /*i标签，a标签，按钮，头部的导航栏，网址卡片，页脚链接*/
+  i:hover,
+  a:hover,
+  button:hover,
+  #nav .site-page:hover,
+  .xe-widget.xe-conversations.box2.label-info {
+    cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor_puppy.png),
+      pointer !important;
+  }
+  
+  /*页脚a标签，分页器，搜索框*/
+  #footer-wrap a:hover,
+  #pagination .page-number:hover,
+  input#txt {
+    cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor_stitch.png),
+      pointer !important;
+  }
+  /* 鼠标图标 -----------------------------------------------------------------------结束 */
+  
+  /* 移动端 -------------------------------------- 开始 */
+  /* 左右边距 */
+  @media screen and (max-width: 768px) {
+    .markdown-section {
+      max-width: 100%;
+    }
+    h1 span {
+      font-size: 32px;
+    }
+    h2 span {
+      font-size: 28px;
+    }
+    h3 span {
+      font-size: 24px;
+    }
+    h4 span {
+      font-size: 20px;
+    }
+    h5 span {
+      font-size: 18px;
+    }
+    h6 span {
+      font-size: 18px;
+    }
+    /* 文章 */
+    .markdown-section p,
+    .markdown-section ol li,
+    .markdown-section ul li,
+    table {
+      font-size: 15px !important;
+    }
+    /* p行间距 */
+    .markdown-section p {
+      margin: 5px auto;
+    }
+    /* 隐藏导航栏 */
+    .app-nav.no-badge {
+      visibility: hidden;
+    }
+    /* 搜索 */
+    .search {
+      margin: 0 auto 9px !important;
+    }
+  }
+  /* 移动端 -------------------------------------- 结束 */
