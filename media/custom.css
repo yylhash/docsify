@@ -156,49 +156,50 @@
     transform: translate(0.6rem);
   }
   h1.app-name:hover,
-  h1#诗-颂-的-文-档:hover,
-  h2#docsify-4121:hover {
+  h1#不爱学习的晓鱼:hover,
+  h2#docsify-444:hover {
     transform: translate(0);
   }
   h1:before {
-    content: "H1";
+    content: "🐳";
     margin: 0 1rem 0 0;
     font-size: 30px;
     color: #bfe4fb;
+
   }
   h2:before {
-    content: "H2";
+    content: "🐋";
     margin: 0 0.9rem 0 0;
     font-size: 26px;
     color: #bfe4fb;
   }
   h3:before {
-    content: "H3";
+    content: "🐬";
     margin: 0 0.8rem 0 0;
     font-size: 22px;
     color: #bfe4fb;
   }
   h4:before {
-    content: "H4";
+    content: "🐟";
     margin: 0 0.7rem 0 0;
     font-size: 20px;
     color: #bfe4fb;
   }
   h5:before {
-    content: "H5";
+    content: "🐠";
     margin: 0 0.6rem 0 0;
     font-size: 18px;
     color: #bfe4fb;
   }
   h6:before {
-    content: "H6";
+    content: "🦈";
     margin: 0 0.6rem 0 0;
     font-size: 18px;
     color: #bfe4fb;
   }
   h1.app-name::before,
-  h1#诗-颂-的-文-档::before,
-  h2#docsify-4121:before {
+  h1#不爱学习的晓鱼::before,
+  h2#docsify-444:before {
     content: "";
     margin: 0;
   }
@@ -486,7 +487,7 @@
   
   /* 鼠标图标 -----------------------------------------------------------------------开始 */
   body {
-    cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor.png), default !important;
+    cursor: url(https://s3.bmp.ovh/imgs/2022/06/09/ff6ba331ea80e6f9.png), default !important;
   }
   
   /*i标签，a标签，按钮，头部的导航栏，网址卡片，页脚链接*/
@@ -495,7 +496,7 @@
   button:hover,
   #nav .site-page:hover,
   .xe-widget.xe-conversations.box2.label-info {
-    cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor_puppy.png),
+    cursor: url(https://s3.bmp.ovh/imgs/2022/06/09/0ba3679e0b80d678.png),
       pointer !important;
   }
   
