@@ -7,6 +7,7 @@
 
 <br>
 
-<!-- ## 📈 Page View
+## 📈 Page View
 
-<img src="https://count.getloli.com/get/@:hassanblog@docsify?theme=rule34"> -->
+<!-- <img src="https://count.getloli.com/get/@:hassanblog@docsify?theme=rule34"> -->
+<img src="https://count.getloli.com/get/@:hassanblog@docsify?theme=gelbooru">
