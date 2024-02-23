@@ -27,3 +27,5 @@
 
 **`<foreach>`标签**：用于遍历集合参数，生成对应的SQL片段。
 
+## 3、Mybatis的Xml映射文件中，不同的Xml映射文件，id是否可以重复？
+而在同一个namespace内，每个语句（select、insert、update、delete等）都需要有一个唯一的id来标识。因此，在同一个XML映射文件的同一个namespace下，id是不能重复的。如果你有多个XML映射文件，每个文件都有独立的namespace，那么在不同的文件中可以使用相同的id，因为namespace的不同会区分它们的唯一性。
