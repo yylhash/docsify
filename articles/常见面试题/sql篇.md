@@ -75,3 +75,11 @@ EXPLAIN SELECT * FROM table_name WHERE column_name = 'value';
  SELECT * FROM mytable order by age
  ```
  当进行order by的时候，如果数据量很小，数据库可能会直接在内存中进行排序，而不使用索引。
+
+
+
+
+
+
+
+ 以上内容来源自网络，需要删除请联系我！！！
