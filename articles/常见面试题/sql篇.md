@@ -22,7 +22,7 @@ EXPLAIN SELECT * FROM table_name WHERE column_name = 'value';
  其次，type应该是ref、eq_ref、range、const等这几个
  还有，extra的话，如果是NULL，或者using index，using index condition都是可以的
 
-### 2.1.索引失效的集中情况
+### 2.1.索引失效的几种情况
 > 索引列参与计算
  ```sql
  select * from mytable where age = 12;
